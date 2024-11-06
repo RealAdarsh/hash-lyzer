@@ -1,0 +1,25 @@
+[package]
+name = "hash-lyzer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+xmlsec = { git = "https://github.com/zerocom38/rust-xmlsec.git", branch = "feature/xmlsec-lib-from-source" }
+libxml = "0.3"
+base64 = "0.22"
+thiserror = "2.0.0"
+openssl = "0.10.68"
+log = "0.4.22"
+clap = { version = "4.5.20", features = ["derive"] }
+eframe = "0.29.1"
+egui = "0.29.1"
+rfd = "0.15.0"
+
+
+[lib]
+name = "hash_lyzer"
+path = "src/lib.rs"
+
+[[bin]]
+name = "hash-lyzer"
+path = "src/main.rs"
